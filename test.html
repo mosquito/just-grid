@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+
+	<title>test</title>
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+	 less = {
+		env: "development",
+		async: false,
+		fileAsync: false,
+		poll: 1000,
+		functions: {},
+		relativeUrls: false,
+	};
+	</script>
+	<link rel="stylesheet/less" type="text/css" href="less/main.less" />
+	<script src="less.min.js"></script>
+	
+	<script type="text/javascript">
+		less.watch();
+	</script>
+
+	<style type="text/css">
+		.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+			border: 1px solid white;
+			background: #bbb;
+			border-radius: 5px;
+			padding: 10px;
+			text-align: center;
+			font-family: "Arial";
+			font-weight: bold;
+			font-size: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="grid">
+		<div class="row">
+			<div class="col12">col12</div>
+		</div>
+		<div class="row">
+			<div class="col1">col1</div>
+			<div class="col11">col11</div>
+		</div>
+		<div class="row">
+			<div class="col2">col2</div>
+			<div class="col10">col10</div>
+		</div>
+		<div class="row">
+			<div class="col3">col3</div>
+			<div class="col9">col9</div>
+		</div>
+		<div class="row">
+			<div class="col4">col4</div>
+			<div class="col8">col8</div>
+		</div>
+		<div class="row">
+			<div class="col5">col5</div>
+			<div class="col7">col7</div>
+		</div>
+		<div class="row">
+			<div class="col6">col6</div>
+			<div class="col6">col6</div>
+		</div>
+		<div class="row">
+			<div class="col4">col4</div>
+			<div class="col4">col4</div>
+			<div class="col4">col4</div>
+		</div>
+		<div class="row">
+			<div class="col3">col3</div>
+			<div class="col3">col3</div>
+			<div class="col3">col3</div>
+			<div class="col3">col3</div>
+		</div>
+		<div class="row">
+			<div class="pre3 col3">col3</div>
+			<div class="col3">col3</div>
+			<div class="col3">col3</div>
+		</div>
+		<div class="row">
+			<div class="pre2 col5 post2">pre3 col1 post3</div>
+			<div class="col3">col3</div>
+		</div>
+		<div class="row">
+			<div class="pre1 col2">pre1 col1 post1</div>
+			<div class="pre1 col2">pre1 col1 post1</div>
+			<div class="pre1 col2">pre1 col1 post1</div>
+			<div class="pre1 col2">pre1 col1 post1</div>
+		</div>
+		<div class="row">
+			<div class="pre10 col2">pre1 col1 post1</div>
+		</div>
+	</div>
+</body>
+</html>
