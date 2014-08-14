@@ -1,3 +1,16 @@
+@media_edge_phone_portrait: 320px;
+@media_edge_phone_landscape: 640px;
+@media_edge_tablet_portrait: 800px;
+@media_edge_tablet_landscape: 1024px;
+@media_edge_desktop: 1824px;
+
+@media_start_phone_landscape: (@media_edge_phone_portrait + 1);
+@media_start_tablet_portrait: (@media_edge_phone_landscape + 1);
+@media_start_tablet_landscape: (@media_edge_tablet_portrait + 1);
+@media_start_desktop: (@media_edge_tablet_landscape + 1);
+@media_start_desktop_xl: (@media_edge_desktop + 1);
+
+
 @import "partial/media";
 @import "partial/mixins";
 
@@ -47,15 +60,15 @@
 		}
 
 		@media @phone-portrait, @phone-landscape {
-			.hidden-phone, .visible-desktop, .visible-tablet { display: none; }
+			.hidden-phone, .visible-desktop, .visible-tablet { display: none !important; }
 		}
 
 		@media @tablet-portrait, @tablet-landscape {
-			.hidden-tablet, .visible-phone, .visible-desktop { display: none; }
+			.hidden-tablet, .visible-phone, .visible-desktop { display: none !important; }
 		}
 
 		@media @desktop, @desktop-xl {
-			.hidden-desktop, .visible-phone, .visible-tablet { display: none; }
+			.hidden-desktop, .visible-phone, .visible-tablet { display: none !important; }
 		}
 
 		& > * {
