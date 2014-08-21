@@ -1,11 +1,20 @@
 @phone: ~"only screen and (max-width: @{media_edge_phone_landscape})";
-@tablet: ~"only screen and (min-width: @{media_start_phone_landscape}) and (max-width: @{media_edge_tablet_landscape})";
+@tablet: ~"only screen and (min-width: @{media_start_tablet_portrait}) and (max-width: @{media_edge_tablet_landscape})";
 
-@phone-portrait: ~"only screen and (max-width: @{media_edge_phone_portrait})";
+@phone-portrait: ~"only screen  and (max-width: @{media_edge_phone_portrait})";
 @phone-landscape: ~"only screen and (min-width: @{media_start_phone_landscape}) and (max-width: @{media_edge_phone_landscape})";
 
-@tablet-portrait: ~"only screen and (min-width: @{media_start_phone_landscape}) and (max-width: @{media_edge_tablet_portrait})";
+@tablet-portrait: ~"only screen and (min-width: @{media_start_tablet_portrait}) and (max-width: @{media_edge_tablet_portrait})";
 @tablet-landscape: ~"only screen and (min-width: @{media_start_tablet_landscape}) and (max-width: @{media_edge_tablet_landscape})";
 
 @desktop: ~"only screen and (min-width: @{media_start_desktop}) and (max-width: @{media_edge_desktop})";
 @desktop-xl: ~"only screen and (min-width: @{media_start_desktop_xl})";
+
+// @media @phone { /* Phone */ }
+// @media @tablet { /* Tablet */ }
+// @media @phone-portrait { /* Phone Portrait */ }
+// @media @phone-landscape { /* Phone landscape */ }
+// @media @tablet-portrait { /* Tablet portrait */ }
+// @media @tablet-landscape { /* Tablet landscape */ }
+// @media @desktop { /* Desktop */ }
+// @media @desktop-xl { /* Desktop XL */ }
