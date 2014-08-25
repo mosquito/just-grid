@@ -80,13 +80,14 @@
 
 		& > *:last-child {
 			float: none;
-		}
-
-		&:after {
-			content: " ";
-			width: 100%;
-			display: inline-block;
-			height: 0px;
+			&:after {
+				box-sizing: border-box;
+				line-height: 0 !important;
+				content: "";
+				display: inline-block;
+				position: absolute;
+				height: 0px;
+			}
 		}
 	}
 }
